@@ -20,7 +20,13 @@ body {
 .img-medium {
     height: 200px;
 }
-p
-{
-   color:blue; 
+.blinking{
+    animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    20%{    color: blue; }
+    50%{    color: teal; }
+    75%{    color:yellow;  }
+    100%{   color: #000;    }
 }
