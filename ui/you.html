@@ -13,13 +13,23 @@
     
     /* 3 */
    transform: translate(0%, -50%) }
+   .blinking{
+    animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
         </style>
         
     </head>
     <body bgcolor="lightgreen">
-    <h1><center><div class="container3 p">
+    <h1><center><div class="container3 p"><span class="blinking">
         
-       <p><font style="color:red"><font size="50px">WISH U A HAPPY SREE RAMA NAVAMI</font></font></p> </div> </center>
+       <p><font style="color:red"><font size="50px">WISH U A HAPPY SREE RAMA NAVAMI</font></font></p></span> </div> </center>
     </h1>
     </body>
 </html>
